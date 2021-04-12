@@ -1,0 +1,25 @@
+package com.ashley.springdemo.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/coding")
+public class CodingController {
+	
+	@RequestMapping("")
+	public String index() { //AN EXAMPLE OF A GET REQUEST
+		return redirect ("/coding");
+	}
+	
+	private String redirect(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@RequestMapping("/coding")
+	public String coding() {
+		return "Hello Coding Dojo!";
+	}
+
+}

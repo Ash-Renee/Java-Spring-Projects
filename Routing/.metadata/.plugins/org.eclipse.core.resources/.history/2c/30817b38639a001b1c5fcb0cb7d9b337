@@ -1,0 +1,19 @@
+package com.ashley.springdemo.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class FireNationController {
+	
+	//LISTEN FOR URLS AND SEND BACK RESPONSES
+		  @PostMapping("/attack")
+		  public String attack(@RequestParam("poorNation") Nation poorNation) {
+		    // bad things happen here
+		    return redirect("/");
+		  }
+		}
+	
+	
+	
+
+}

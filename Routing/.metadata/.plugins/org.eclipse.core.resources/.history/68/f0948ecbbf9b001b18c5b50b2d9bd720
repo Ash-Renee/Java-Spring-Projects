@@ -1,0 +1,5 @@
+package com.ashley.springdemo.controller;
+
+public class CodingController {
+
+}

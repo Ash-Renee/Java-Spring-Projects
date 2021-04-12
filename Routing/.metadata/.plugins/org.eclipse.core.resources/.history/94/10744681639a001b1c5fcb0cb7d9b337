@@ -1,0 +1,19 @@
+package com.ashley.springdemo.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class FireNationController {
+	
+	//LISTEN FOR URLS AND SEND BACK RESPONSES
+		  @RequestMapping("")
+		  public String index() {  // The equivalent of our views.py
+		    return "Hello World";
+		  }
+
+	
+	
+	
+
+}

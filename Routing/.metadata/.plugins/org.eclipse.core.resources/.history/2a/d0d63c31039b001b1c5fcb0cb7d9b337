@@ -1,0 +1,26 @@
+package com.ashley.springdemo.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+
+@RestController
+@RequestMapping("/coding")
+public class CodingController {
+	
+	@RequestMapping("/")
+	public String index() { //AN EXAMPLE OF A GET REQUEST
+		return "Hello Coding Dojo!";
+	}
+	
+	@RequestMapping("/python")
+	public String dojo() {
+		return "Can I go back to python please??";
+	}
+
+	@RequestMapping("/java")
+	public String java() {
+		return "Java/Spring is NOT FUCKING BETTER!"
+	}
+}
