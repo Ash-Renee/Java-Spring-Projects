@@ -1,11 +1,11 @@
 package com.ashley.displaydate.controllers;
 
-import java.sql.Time;
+//import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-//import java.fucking.kitchenSink
+//import java.time.LocalTime;
+//import java.time.format.DateTimeFormatter;
+//import java.fucking.kitchenSink all of those were extranious
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,12 +33,7 @@ public class MainController {
 		return "date.jsp";
 	}
 	
-//	@RequestMapping("/time")
-//	public String getLocalTimeFromClock(char[] LocalTime) {
-//		System.out.println(LocalTime);
-//	        return "time.jsp";
-//	    }
-	
+
 	@RequestMapping("/time")
 	public String time(Model model) {
 		SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");
@@ -52,17 +47,5 @@ public class MainController {
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
